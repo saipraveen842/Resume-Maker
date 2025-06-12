@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-section" id="formSection">
+            <h2>Resume Form</h2>
+
+            <label>Full Name <input type="text" id="fullName" /></label>
+            <label>Job Title <input type="text" id="jobTitle" /></label>
+            <label>Email <input type="email" id="email" /></label>
+            <label>Phone <input type="text" id="phone" /></label>
+            <label>Address <input type="text" id="address" /></label>
+            <label>Summary <textarea id="summary"></textarea></label>
+            <label>Skills (comma-separated) <textarea id="skills"></textarea></label>
+            <label>Education <textarea id="education"></textarea></label>
+            <label>Experience <textarea id="experience"></textarea></label>
+            <label>Projects <textarea id="projects"></textarea></label>
+
+            <button onclick="toggleView()">Toggle View</button>
+            <button onclick="window.print()">Print Resume</button>
+        </div>
+
+        <div class="preview-section" id="previewSection">
+            <h1 id="previewName">Your Name</h1>
+            <h3 id="previewTitle">Your Title</h3>
+            <p><strong>Email:</strong> <span id="previewEmail"></span></p>
+            <p><strong>Phone:</strong> <span id="previewPhone"></span></p>
+            <p><strong>Address:</strong> <span id="previewAddress"></span></p>
+
+            <h3>Summary</h3>
+            <p id="previewSummary"></p>
+
+            <h3>Skills</h3>
+            <ul id="previewSkills"></ul>
+
+            <h3>Education</h3>
+            <p id="previewEducation"></p>
+
+            <h3>Experience</h3>
+            <p id="previewExperience"></p>
+
+            <h3>Projects</h3>
+            <p id="previewProjects"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
